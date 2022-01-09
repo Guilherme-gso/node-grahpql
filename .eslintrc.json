@@ -21,6 +21,7 @@
   "rules": {
     "import/no-extraneous-dependencies": "off",
     "class-methods-use-this": "off",
+    "no-console": "off",
     "import/prefer-default-export": "off",
     "camelcase": "off",
     "@typescript-eslint/no-empty-function": "off",
@@ -31,7 +32,12 @@
         "argsIgnorePattern": "_"
       }
     ],
-    "prettier/prettier": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "import/extensions": [
       "error",
       "ignorePackages",
